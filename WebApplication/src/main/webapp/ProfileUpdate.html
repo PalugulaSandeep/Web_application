@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile Update Page</title>
+</head>
+<body>
+<center><h1 style="background-color:powderblue;">Profile Update</h1></center>
+<form action="ProfileUpdateServlet" method="POST">
+<center>FirstName:<input type="text" name="firstname"  pattern = "[a-zA-Z ']*" required/><br><br>
+LastName:<input type="text" name="lastname"   pattern = "[a-zA-Z ']*"  required/><br><br>
+MobileNo:<input type="number" name="mobileno" min="6000000000" max="9999999999" required/><br><br>
+Email:<input type="email" placeholder="abc@gmail.com"  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/><br><br>
+
+<input type="submit" value="Submit" /><br><br>
+<a href="loginsucess.jsp"><input type="button"  value="Cancel"></a>
+
+</center>
+</form>
+
+</body>
+</html>

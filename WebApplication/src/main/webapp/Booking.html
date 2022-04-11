@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Booking Page</title>
+</head>
+<body>
+<center>
+<h1 style="background-color:powderblue;">Booking</h1>
+<form action="BookingServlet" method="POST">
+Name:<input type="text" name="name"    pattern = "[a-zA-Z ]*" required/><br><br>
+Email:<input type="email" name="email" /><br><br>
+Address:<input type="text" name="address"   pattern = "[a-zA-Z ]*"  required/><br><br>
+
+Hostel Name:
+<br><br>
+      <label>
+        <input type="radio" name="hostelname" value="arhostel"  required>arhostel
+      </label><br><br>
+      <label>
+        <input type="radio" name="hostelname" value="brhostel">brhostel
+      </label><br><br>
+      <b><p style="color:#FF0000"; > Price <br>Single Room -- 7000 <br>
+           Two Sharing -- 6000  </p> </b>
+rcapacity:<input type="number"  min ="1" max="2" name="rcapacity"/><br><br>
+ Doj:<input type="date"  name="doj" min="2022-04-08" max="2022-05-01" required />
+<input type="submit" value="Submit"/><br><br>
+<a href="loginsucess.jsp"><input type="button" value="Back"/></a>
+</form>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
